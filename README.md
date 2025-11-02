@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [http://127.0.0.1:3000/JavaScript/Article%20Preview%20Component/index.html]
-- Live Site URL: [Add live site URL here]
+- Live Site URL: [https://birumj.github.io/Article-Preview-Component/]
 
 ### Built with
 
