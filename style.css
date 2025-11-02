@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Manrope", sans-serif;
+}
+
+main {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.article-component {
+    width: 90%;
+    max-width: 700px;
+    background-color: aliceblue;
+    box-shadow: 0px 0px 40px hsl(213, 39%, 88%);
+    color: hsl(217, 19%, 35%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+}
+
+.article-furniture {
+    width: 100%;
+    min-height: 220px;
+    background-image: url("./images/drawers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+@media (min-width: 600px) {
+    .article-component {
+        flex-direction: row;
+    }
+
+    .article-furniture {
+        width: 38%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .article-details {
+        width: 62%;
+    }
+}
+
+.article-details {
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 600;
+    color: hsl(214, 17%, 51%);
+    margin: 20px 0;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.person-details h2 {
+    font-size: 0.8rem;
+    font-weight: 800;
+}
+
+.person-details p {
+    font-weight: 400;
+    margin: 0;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.profile-icon img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.share-btn {
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(210, 68%, 91%);
+    padding: 8px;
+    cursor: pointer;
+}
+
+.share-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 240px;
+    padding: 1em 1.5em;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px hsl(217, 8%, 56%);
+    position: absolute;
+    bottom: 90px;
+    right: 20px;
+}
+
+.traingle-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid hsl(217, 19%, 35%);
+    position: absolute;
+    top: 100%;
+    left: 84%;
+}
+
+@media (min-width: 850px) {
+    .share-container {
+        bottom: 90px;
+        right: -65px;
+    }
+
+    .traingle-down {
+        left: 50%;
+    }
+}
+
+.share-container span {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: hsl(214, 17%, 51%);
+}
+
+.share-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.share-links img {
+    transition: transform 0.2s ease;
+}
+
+.share-links img:hover {
+    transform: scale(1.2);
+}
+
+.share-container {
+    display: none;
+}
+
+.show {
+    display: flex;
+    transition: all ease 0.2s;
+}
+
+
+footer {
+    width: 100%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+    color: black;
+}
